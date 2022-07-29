@@ -1,6 +1,6 @@
 ===Commands===
 cmd:echo hello
-cmd:start notepad
+cmd:start notepad.exe
 
 
 
