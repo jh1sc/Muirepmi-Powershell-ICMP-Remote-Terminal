@@ -1,1 +1,1 @@
-ping 212.192.29.189 -n 1
+echo hello
