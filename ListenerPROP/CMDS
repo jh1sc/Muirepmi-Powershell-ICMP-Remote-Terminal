@@ -1,0 +1,3 @@
+cmd=echo hello
+cmd=open notepad.exe
+cmd=ipconfig
