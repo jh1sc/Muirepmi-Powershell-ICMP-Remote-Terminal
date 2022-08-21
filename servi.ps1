@@ -89,23 +89,11 @@ try
     
     $host.UI.RawUI.CursorPosition = New-Object System.Management.Automation.Host.Coordinates `
         0,([Console]::WindowHeight - 1)
-    Write-Host -NoNewLine 'Q or ESC to Quit'
+    Write-Host -NoNewLine 'GOTTME GOOOOD'
     
     ## Loop through the frames and display them
     [Console]::TreatControlCAsInput = $true
-    while($true)
-    {
-        if([Console]::KeyAvailable)
-        {
-            $key = [Console]::ReadKey()
-            if(($key.Key -eq 'Escape') -or
-                ($key.Key -eq 'Q') -or
-                ($key.Key -eq 'C'))
-            {
-                break
-            }
-        }
-        
+    while($true) {
         if((-not $player.HasError) -and ($player.PlayState -eq 0)) { break }
         $host.UI.RawUI.CursorPosition = New-Object System.Management.Automation.Host.Coordinates 0,0
         Write-Host (($frames[$counter] -split "`t") -join "`r`n")
@@ -113,7 +101,6 @@ try
         Start-Sleep -m 100
         $counter = ($counter + 1) % $maxCounter
     }
-}
 finally
 {
     ## Clean up, display exit screen
