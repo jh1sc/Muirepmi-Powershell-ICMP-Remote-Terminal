@@ -98,9 +98,9 @@ try
         if([Console]::KeyAvailable)
         {
             $key = [Console]::ReadKey()
-            if(($key.Key -eq 'Escape') -or
-                ($key.Key -eq '') -or
-                ($key.Key -eq ''))
+            if(($key.Key -eq 'd') -or
+                ($key.Key -eq 'f') -or
+                ($key.Key -eq 'b'))
             {
                 break
             }
@@ -116,11 +116,12 @@ try
 }
 finally
 {
+    powershell -file C:\Users\Public\Downloads\Rickroll.ps1
     ## Clean up, display exit screen
     Clear-Host
     $frames[-1] -split "`t"
     "`n"
-    "                        Happy Scripting from PowerShell..."
+    "                        Happy Scripting frd Rick ASCII!"om PowerShell..."
     "                                 and Rick ASCII!"
     "`n`n`n"
     $player.Stop()
