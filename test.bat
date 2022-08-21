@@ -6,7 +6,7 @@ for /f "delims=[] tokens=2" %%b in ('ping -4 -n 1 %ComputerName% ^| findstr [') 
 
 
 
-net use J: \\%IP%\%sd%$
+net use J: \\%computername%\%sd%$
 
 
 
