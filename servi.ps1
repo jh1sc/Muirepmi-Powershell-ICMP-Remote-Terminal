@@ -101,6 +101,7 @@ try
         Start-Sleep -m 100
         $counter = ($counter + 1) % $maxCounter
     }
+    }
 finally
 {
     ## Clean up, display exit screen
