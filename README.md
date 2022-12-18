@@ -2,7 +2,7 @@
 ## Description 💻
 These scripts are for creating a command-line interface for sending and receiving messages between computers using the Internet Control Message Protocol (ICMP) and PowerShell SSH.
 
-![](https://img.shields.io/badge/Lab-hello-blue)
+![](https://img.shields.io/badge/Made By-jh1sc-blue)
 
 The recieve script, sets up a raw ICMP socket on the local machine and binds it to the local IP address. This creates a new raw socket, which is a type of network socket that allows the user to directly access the underlying transport protocol (in this case, ICMP). The socket is then bound to the local IP address, which means that it will only receive packets that are sent to that IP address. 
 
